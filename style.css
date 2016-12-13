@@ -1,0 +1,334 @@
+/* line 5, ../../.rvm/gems/ruby-2.0.0-p648/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../.rvm/gems/ruby-2.0.0-p648/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../.rvm/gems/ruby-2.0.0-p648/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../.rvm/gems/ruby-2.0.0-p648/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../.rvm/gems/ruby-2.0.0-p648/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../.rvm/gems/ruby-2.0.0-p648/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../.rvm/gems/ruby-2.0.0-p648/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../.rvm/gems/ruby-2.0.0-p648/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../.rvm/gems/ruby-2.0.0-p648/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?harwg2");
+  src: url("../fonts/icomoon.eot?harwg2#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?harwg2") format("truetype"), url("../fonts/icomoon.woff?harwg2") format("woff"), url("../fonts/icomoon.svg?harwg2#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, ../sass/icomoon.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 27, ../sass/icomoon.scss */
+.icon-home3:before {
+  content: "\e902";
+}
+
+/* line 30, ../sass/icomoon.scss */
+.icon-office:before {
+  content: "\e903";
+}
+
+/* line 33, ../sass/icomoon.scss */
+.icon-images:before {
+  content: "\e90e";
+}
+
+/* line 36, ../sass/icomoon.scss */
+.icon-camera:before {
+  content: "\e90f";
+}
+
+/* line 39, ../sass/icomoon.scss */
+.icon-file-text:before {
+  content: "\e922";
+}
+
+/* line 42, ../sass/icomoon.scss */
+.icon-profile:before {
+  content: "\e923";
+}
+
+/* line 45, ../sass/icomoon.scss */
+.icon-qrcode:before {
+  content: "\e938";
+}
+
+/* line 48, ../sass/icomoon.scss */
+.icon-credit-card:before {
+  content: "\e93f";
+}
+
+/* line 51, ../sass/icomoon.scss */
+.icon-phone:before {
+  content: "\e942";
+}
+
+/* line 54, ../sass/icomoon.scss */
+.icon-envelop:before {
+  content: "\e945";
+}
+
+/* line 57, ../sass/icomoon.scss */
+.icon-map:before {
+  content: "\e94b";
+}
+
+/* line 60, ../sass/icomoon.scss */
+.icon-printer:before {
+  content: "\e954";
+}
+
+/* line 63, ../sass/icomoon.scss */
+.icon-bubble:before {
+  content: "\e96b";
+}
+
+/* line 16, ../sass/style.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  text-align: center;
+  background-color: #efefef;
+  color: #4f4f4f;
+}
+
+/* line 26, ../sass/style.scss */
+.hero {
+  max-width: auto;
+  margin: 0 auto;
+  background: url("../images/cha.JPG");
+  background-size: cover;
+  color: white;
+}
+/* line 36, ../sass/style.scss */
+.hero header {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 37, ../sass/style.scss */
+.hero header img {
+  width: 8em;
+  height: auto;
+  float: left;
+  border-radius: 2px;
+  opacity: .5;
+}
+/* line 45, ../sass/style.scss */
+.hero header ul {
+  float: right;
+}
+/* line 48, ../sass/style.scss */
+.hero header ul li {
+  float: left;
+  margin: 1em 0.5em;
+  padding: 0.5em 1em;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+/* line 55, ../sass/style.scss */
+.hero header ul li:last-child {
+  border: 1px solid white;
+}
+/* line 63, ../sass/style.scss */
+.hero h1 {
+  font-size: 4em;
+  padding: 1em 0.5em;
+  color: #4f4f4f;
+  font-weight: bold;
+}
+/* line 70, ../sass/style.scss */
+.hero h2 {
+  font-size: 2em;
+  color: #4f4f4f;
+}
+/* line 75, ../sass/style.scss */
+.hero form {
+  padding: 2em 0 4em 0;
+}
+/* line 78, ../sass/style.scss */
+.hero form input[type="text"] {
+  padding: 1em;
+  border: 0;
+  width: 18em;
+  border-radius: 2px 0 0 2px;
+  background: black;
+  opacity: .3;
+}
+/* line 87, ../sass/style.scss */
+.hero form input[type="button"] {
+  color: white;
+  padding: 1em;
+  border: 0;
+  width: 6em;
+  border-radius: 0s 2px 2px 0;
+  background-color: #6cdcac;
+  text-transform: uppercase;
+}
+
+/* line 99, ../sass/style.scss */
+.numbers {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 103, ../sass/style.scss */
+.numbers ul {
+  position: relative;
+  top: -1em;
+  background: #efefef;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 108, ../sass/style.scss */
+.numbers ul li {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  border-top: 1px solid #D9DADA;
+  border-bottom: 1px solid #D9DADA;
+  border-left: 1px solid #D9DADA;
+}
+/* line 116, ../sass/style.scss */
+.numbers ul li:last-child {
+  border-right: 1px solid #D9DADA;
+}
+/* line 120, ../sass/style.scss */
+.numbers ul li h2 {
+  font-size: 2em;
+  padding: 1em 0;
+}
+/* line 125, ../sass/style.scss */
+.numbers ul li h3 {
+  padding: 0 0 2em 0;
+}
+
+/* line 135, ../sass/style.scss */
+.About-Us h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+/* line 140, ../sass/style.scss */
+.About-Us h2:after {
+  display: block;
+  content: "";
+  background-color: #4f4f4f;
+  width: 2em;
+  height: .1em;
+  margin: .4em auto;
+}
+/* line 150, ../sass/style.scss */
+.About-Us li {
+  float: left;
+  width: 33.3%;
+}
+/* line 155, ../sass/style.scss */
+.About-Us .number {
+  font-size: 2em;
+  color: #4f4f4f;
+  border: 1px solid #4f4f4f;
+  width: 1em;
+  height: 1em;
+  display: block;
+  margin: 1em auto 2em auto;
+  padding: .4em;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #efefef;
+}
+/* line 168, ../sass/style.scss */
+.About-Us h3 {
+  font-size: 2em;
+  margin: 2em auto 1em auto;
+  padding: .4em;
+  font-weight: bold;
+}
+/* line 175, ../sass/style.scss */
+.About-Us p::before {
+  content: "";
+  display: block;
+  color: #6e6e6e;
+}
+/* line 181, ../sass/style.scss */
+.About-Us i {
+  font-size: 3.6em;
+}
+/* line 185, ../sass/style.scss */
+.About-Us .icon-file-text {
+  color: #ECA95A;
+}
+/* line 189, ../sass/style.scss */
+.About-Us .icon-profile {
+  color: #AC9CD2;
+}
+/* line 193, ../sass/style.scss */
+.About-Us .icon-map {
+  color: #4D99CB;
+}
