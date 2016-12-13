@@ -1,0 +1,197 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/typography";
+@import	"icomoon";
+
+$body-color: #efefef;
+$text-color: #4f4f4f;
+$second-text-color:	#D9DADA;
+$highlight-color: lightgreen;
+$highlight-text-color: white;
+$button-color: #6cdcac;
+$background-color: #efefef;
+$border-color: #4f4f4f;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 62.5%;
+	text-align: center;
+
+	background-color: $body-color;
+	color: $text-color;
+}
+
+
+.hero {
+	max-width: auto;
+	margin: 0 auto;
+	
+	background: url('../images/cha.JPG');
+	background-size: cover;
+
+	color: $highlight-text-color;
+
+	
+	header {
+		img {
+			width: 8em;
+			height: auto;
+			float: left;
+			border-radius: 2px;
+			opacity: .5;
+		}
+
+		ul {
+			float: right;
+
+			li {
+				float: left;
+				margin: 1em 0.5em;
+				padding: 0.5em 1em;
+				border: 1px solid transparent;
+				border-radius: 2px;
+
+				&:last-child {
+					border: 1px solid $highlight-text-color;
+				}
+			}
+		}
+		@include clearfix;
+	}
+
+	h1 {
+		font-size: 4em;
+		padding: 1em 0.5em;
+		color: $text-color;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: 2em;
+		color: $text-color;
+	}
+
+	form {
+		padding: 2em 0 4em 0;
+
+		input[type="text"] {
+			padding: 1em;
+			border: 0;
+			width: 18em;
+			border-radius: 2px 0 0 2px;
+			background: black;
+			opacity: .3;
+		}
+
+		input[type="button"] {
+			color: $highlight-text-color;
+			padding: 1em;
+			border: 0;
+			width: 6em;
+			border-radius: 0s 2px 2px 0;
+			background-color: $button-color;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.numbers {
+	width: 80%;
+	margin: 0 auto;
+	
+	ul {
+		position: relative;
+		top: -1em;
+		background: $background-color;
+
+		li {
+			float: left;
+			width: 25%;
+			box-sizing: border-box;
+	  		border-top: 1px solid $second-text-color;
+	      	border-bottom: 1px solid $second-text-color;
+	      	border-left: 1px solid $second-text-color;
+
+	      	&:last-child {
+	      		border-right: 1px solid $second-text-color;
+	      	}
+
+	      	h2 {
+	      		font-size: 2em;
+          		padding: 1em 0;
+	      	}
+
+	      	h3 {
+          		padding: 0 0 2em 0;
+	      	}
+		}
+
+		@include clearfix;
+	}
+}
+
+.About-Us {
+	h2 {
+		font-size: 2em;
+		text-transform: uppercase;
+		padding: 1em 0;
+
+		&:after {
+			display: block;
+			content: "";
+			background-color: $border-color;
+			width: 2em;
+			height: .1em;
+			margin: .4em auto;
+		}
+	}
+
+	li {
+		float: left;
+		width: 33.3%;
+	}
+
+	.number {
+		font-size: 2em;
+		color: $border-color;
+		border: 1px solid $border-color;
+		width: 1em;
+		height: 1em;
+		display: block;
+		margin: 1em auto 2em auto;
+		padding: .4em;
+		@include border-radius(100%);
+		background-color: $background-color;
+	}
+	
+	h3 {
+		font-size: 2em;
+		margin: 2em auto 1em auto;
+		padding: .4em;
+		font-weight: bold;
+	}
+
+	p::before {
+		content: "";
+		display: block;
+		color: #6e6e6e;
+	}
+
+	i {
+		font-size: 3.6em;
+	}
+
+	.icon-file-text {
+		color: #ECA95A;
+	}
+
+	.icon-profile {
+		color: #AC9CD2;
+	}
+
+	.icon-map {
+		color: #4D99CB;
+	}
+}
+
